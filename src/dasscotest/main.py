@@ -4,8 +4,9 @@ import importlib.resources
 class calciHandler():
     def __init__(self,owner=None):
         if owner is None:
+
             file_path = 'owners.json'
-            with importlib.resources.open_text(__package__,file_path) as f:
+            with importlib.resources.files(__package__).joinpath(file_path).open() as f:
                 data=json.load(f)
 
             self.__owner=data["default"]
