@@ -38,12 +38,15 @@ jobs:
         pytest
     - name: Build and Publish
       run: |
+        pip install setuptools wheel twine
         python setup.py sdist 
         python setup.py bdist_wheel
         python -m twine upload --repository testpypi dist/*
       env:
         TWINE_USERNAME: __token__
         TWINE_PASSWORD: ${{ secrets.testPYPI_TOKEN }}
+
+
 
 
 
