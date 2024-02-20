@@ -13,9 +13,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, windows-latest]
-        python-version: ["3.9", "3.10", "3.11"]
-
+        os: [windows-latest]
+        python-version: ["3.9"]
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python ${{ matrix.python-version }}
@@ -45,6 +44,12 @@ jobs:
       env:
         TWINE_USERNAME: __token__
         TWINE_PASSWORD: ${{ secrets.testPYPI_TOKEN }}
+
+
+
+
+
+
 
 
 
