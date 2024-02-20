@@ -10,7 +10,7 @@ setup(
     packages=['dasscotest'],
     package_dir={'':'src'},
     package_data={"dasscotest": ["*.json"]},
-    version='1.0.6',
+    version='1.0.7',
     author='Thomas Alscher',
     author_email='',
     python_requires='>3.9.0',
