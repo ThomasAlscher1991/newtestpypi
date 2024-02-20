@@ -17,7 +17,7 @@ setup(
     description='dassco test ',
 
     install_requires=[
-        "numpy == 1.26.3",
+        "numpy >= 1.26.3",
 
     ],
 

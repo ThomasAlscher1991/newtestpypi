@@ -1,0 +1,9 @@
+setup.py
+src/dasscotest/__init__.py
+src/dasscotest/main.py
+src/dasscotest/owners.json
+src/dasscotest.egg-info/PKG-INFO
+src/dasscotest.egg-info/SOURCES.txt
+src/dasscotest.egg-info/dependency_links.txt
+src/dasscotest.egg-info/requires.txt
+src/dasscotest.egg-info/top_level.txt
