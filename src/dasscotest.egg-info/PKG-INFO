@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: dasscotest
-Version: 1.0.0
+Version: 1.0.2
 Summary: dassco test 
 Author: Thomas Alscher
 Author-email: 
@@ -9,4 +9,4 @@ Classifier: Intended Audience :: Developers
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python :: 3.9
 Requires-Python: >3.9.0
-Requires-Dist: numpy==1.26.3
+Requires-Dist: numpy>=1.26.3
