@@ -40,6 +40,7 @@ jobs:
         pip install setuptools wheel twine
         python setup.py sdist 
         python setup.py bdist_wheel
+        mv dist/* "dist/your_package_name-${{ github.event.ref_name }}-${{ matrix.os }}-${{ matrix.python-version }}.whl"
         python -m twine upload --repository testpypi dist/*
       env:
         TWINE_USERNAME: __token__
